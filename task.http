@@ -1,0 +1,32 @@
+### Get all tasks
+GET http://localhost:3001/tasks
+Content-Type: application/json
+
+###
+
+POST http://localhost:3001/tasks
+Content-Type: application/json
+
+{
+  "title": "Complete assignment",
+  "description": "Finish the full-stack task manager",
+  "status": "todo",
+  "dueDate": "2025-06-20"
+}
+
+###
+
+### Update a task
+PUT http://localhost:3001/tasks/f83c0e8f-0e9b-4fe8-a2e2-47814a6816d8
+Content-Type: application/json
+
+{
+  "title": "Complete assignment (updated)",
+  "status": "in_progress"
+}
+
+###
+
+### Delete a task
+DELETE http://localhost:3001/tasks/d2dcdf23-2bc6-47b7-828d-548306c56e70
+Content-Type: application/json
